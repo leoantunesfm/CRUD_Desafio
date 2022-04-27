@@ -17,6 +17,11 @@ namespace CRUD_Desafio
             Codigo = codigo;
             Descricao = descricao;
         }
+        public Produto(int codigo, string descricao, double valor, int quantidade) : this (codigo, descricao)
+        {
+            this.SetPreco(valor);
+            this.SetEstoque(quantidade);
+        }
 
         public void SetPreco (double valor)
         {
