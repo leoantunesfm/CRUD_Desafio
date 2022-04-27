@@ -11,6 +11,7 @@ namespace CRUD_Desafio
         public double Preco { get; private set; }
         public int QtdEstoque { get; private set; }
 
+        public Produto() { }
         public Produto(int codigo, string descricao)
         {
             Codigo = codigo;
@@ -20,6 +21,22 @@ namespace CRUD_Desafio
         public void SetPreco (double valor)
         {
             Preco = valor;
+        }
+
+        public void SetEstoque (int quantidade)
+        {
+            QtdEstoque = quantidade;
+        }
+
+        public override string ToString()
+        {
+            return Codigo
+                + " - "
+                + Descricao
+                + " - Valor: "
+                + Preco.ToString("F2")
+                + " - Estoque: "
+                + QtdEstoque;
         }
     }
 }
