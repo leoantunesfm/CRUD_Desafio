@@ -1,0 +1,14 @@
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.exe
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.deps.json
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.runtimeconfig.json
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.runtimeconfig.dev.json
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.dll
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\bin\Debug\netcoreapp3.1\CRUD_Desafio.pdb
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.csproj.AssemblyReference.cache
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.AssemblyInfoInputs.cache
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.AssemblyInfo.cs
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.csproj.CoreCompileInputs.cache
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.dll
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.pdb
+C:\Users\leoan\OneDrive\Projetos\CRUD_Desafio\CRUD_Desafio\CRUD_Desafio\obj\Debug\netcoreapp3.1\CRUD_Desafio.genruntimeconfig.cache
