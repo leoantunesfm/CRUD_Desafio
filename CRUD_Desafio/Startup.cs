@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CRUD_Desafio
 {
@@ -17,6 +18,7 @@ namespace CRUD_Desafio
             int opcao = int.Parse(Console.ReadLine());
 
             Produto produto = new Produto();
+            List<Produto> lstprodutos = new List<Produto>();
 
             switch (opcao)
             {
@@ -27,6 +29,17 @@ namespace CRUD_Desafio
                     string descricao = Console.ReadLine();
 
                     produto = new Produto(codigo, descricao);
+                    lstprodutos.Add(produto);
+
+                    Console.WriteLine();
+                    Console.WriteLine("Cadastre um novo produto:");
+                    Console.Write("Informe o código do produto: ");
+                    codigo = int.Parse(Console.ReadLine());
+                    Console.Write("Informe a descrição do produto: ");
+                    descricao = Console.ReadLine();
+
+                    produto = new Produto(codigo, descricao);
+                    lstprodutos.Add(produto);
 
                     break;
 
@@ -35,7 +48,10 @@ namespace CRUD_Desafio
                     break;
             }
 
-            Console.WriteLine(produto);
+            foreach(Produto p in lstprodutos)
+            {
+                Console.WriteLine(produto);
+            }      
 
 
         }
