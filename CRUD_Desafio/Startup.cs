@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CRUD_Desafio
 {
@@ -12,47 +14,26 @@ namespace CRUD_Desafio
             Console.WriteLine("|-----------------------------------------|");
             Console.WriteLine();
 
-            Console.WriteLine("Informe a opção desejada: ");
-            Console.WriteLine(" 1 - Cadastrar um Produto ");
-            Console.WriteLine(" 2 - Alterar um produto ");
-            int opcao = int.Parse(Console.ReadLine());
+            Console.Write("Informe a quantidade de produtos que serão cadastrados: ");
+            int n = int.Parse(Console.ReadLine());
 
-            Produto produto = new Produto();
-            List<Produto> lstprodutos = new List<Produto>();
-
-            switch (opcao)
+            for (int i = 1; i <= n; i++)
             {
-                case 1:
-                    Console.Write("Informe o código do produto: ");
-                    int codigo = int.Parse(Console.ReadLine());
-                    Console.Write("Informe a descrição do produto: ");
-                    string descricao = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine($"Informe os dados do {i}º produto:");
+                Console.Write("Informe o código do produto: ");
+                string codigo = Console.ReadLine();
+                Console.Write("Informe a descrição do produto: ");
+                string descricao = Console.ReadLine();
+                Console.Write("Informe o preço do produto: ");
+                double preco = double.Parse(Console.ReadLine());
+                Console.Write("Informe a Quantidade em estoque do produto: ");
+                int qtestoque = int.Parse(Console.ReadLine());
 
-                    produto = new Produto(codigo, descricao);
-                    lstprodutos.Add(produto);
-
-                    Console.WriteLine();
-                    Console.WriteLine("Cadastre um novo produto:");
-                    Console.Write("Informe o código do produto: ");
-                    codigo = int.Parse(Console.ReadLine());
-                    Console.Write("Informe a descrição do produto: ");
-                    descricao = Console.ReadLine();
-
-                    produto = new Produto(codigo, descricao);
-                    lstprodutos.Add(produto);
-
-                    break;
-
-                case 2: Console.WriteLine("Opção 2");
-
-                    break;
+                Produto produto = new Produto(codigo, descricao, preco, qtestoque);
+                produto.CadastraProduto();
             }
-
-            foreach(Produto p in lstprodutos)
-            {
-                Console.WriteLine(produto);
-            }      
-
+           
 
         }
     }
