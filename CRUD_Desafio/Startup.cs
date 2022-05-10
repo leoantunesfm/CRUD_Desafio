@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace CRUD_Desafio
 {
@@ -31,7 +28,8 @@ namespace CRUD_Desafio
                 int qtestoque = int.Parse(Console.ReadLine());
 
                 Produto produto = new Produto(codigo, descricao, preco, qtestoque);
-                produto.CadastraProduto();
+                Repository repository = new Repository();
+                repository.CadastraProduto(produto);
             }
            
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data;
-using System.Data.SqlClient;
-
-namespace CRUD_Desafio
+﻿namespace CRUD_Desafio
 {
     class Produto
     {
@@ -23,14 +17,6 @@ namespace CRUD_Desafio
         {
             this.SetPreco(preco);
             this.SetEstoque(quantidade);
-        }
-
-        public void CadastraProduto()
-        {
-            Repository.SqlConnection.Open();
-            SqlCommand sqlCommand = new SqlCommand("INSERT INTO PRODUTO VALUES ('" + Codigo + "','" + Descricao + "'," + Preco.ToString("F2").Replace(',', '.') + "," + QtdEstoque + ")", Repository.SqlConnection);
-            sqlCommand.ExecuteNonQuery();
-            Repository.SqlConnection.Close();
         }
 
         public void SetPreco (double preco)
